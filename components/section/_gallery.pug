@@ -1,0 +1,49 @@
+include ../thumbnail-over/_thumbnail-over
+
+// Gallery
+section.section.section-md.bg-transparent
+	.container
+		.isotope-wrap
+			.isotope-filters
+				.h4.isotope-filter.active( data-isotope-filter="*" ) All
+				.h4.isotope-filter( data-isotope-filter=".services" ) Services
+				.h4.isotope-filter( data-isotope-filter=".facilities" ) Facilities
+			.isotope.row.row-30.row-xl-80
+				.col-md-6.isotope-item.services
+					+thumbnail-over({
+						img:   'galley-01-570x570',
+						title: 'Floral Arrangmenets'
+					})
+				.col-md-6.isotope-item.facilities
+					+thumbnail-over({
+						img:   'galley-02-570x270',
+						title: 'Memorial Services'
+					})
+				
+				.col-xl-3.col-md-6.isotope-item.services
+					+thumbnail-over({
+						img:   'galley-03-570x570',
+						title: 'Funeral Ceremony'
+					})
+				.col-xl-3.col-md-6.isotope-item.services
+					+thumbnail-over({
+						img:   'galley-04-570x570',
+						title: 'Visitation Chapels'
+					})
+				
+				.col-xl-3.col-md-6.isotope-item.services
+					+thumbnail-over({
+						img:   'galley-05-570x570',
+						title: 'Crematory'
+					})
+				.col-xl-3.col-md-6.isotope-item.services
+					+thumbnail-over({
+						img:   'galley-06-570x570',
+						title: 'Coffee Room'
+					})
+				.col-md-6.isotope-item.facilities
+					+thumbnail-over({
+						img:   'galley-07-570x270',
+						title: 'Parking Facilities'
+					})
+

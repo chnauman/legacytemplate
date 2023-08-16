@@ -1,0 +1,15 @@
+//- Thumbnail over
+	@param {object} data - thumbnail data object
+	@param {array} data.img - thumbnail image params (path, width, height)
+	@param {string} data.title - thumbnail title
+	@param {string} data.description - thumbnail description text
+	@param {string} data.link - thumbnail link path
+	@param {string} data.btnText - thumbnail button text
+mixin thumbnail-over( data )
+	// Thumbnail connor
+	figure.thumbnail.thumbnail-over&attributes( attributes )
+		+img( data.img )
+		figcaption.thumbnail-over-caption
+			h4.thumbnail-over-title= data.title
+			.thumbnail-over-description Duis aute irure dolor in reprehenderit.
+			a.thumbnail-over-btn( href= data.link ? data.link : '#' )= data.btnText ? data.btnText : 'Learn more'

@@ -1,0 +1,64 @@
+include ../post/_post
+include ../pagination/_pagination
+
+// Blog grid
+section.section.section-md.bg-transparent
+	.container
+		.row.row-40.justify-content-xxl-between
+			.col-md-8
+				.row.row-30.row-xl-60.justify-content-center
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-01-368x228',
+							tag:   'News',
+							title: 'Sympathy Flowers: A Guide to Sending Flowers for Funerals',
+							date:  'November 12, 2020'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-02-368x228',
+							tag:   'News',
+							title: '9 Ways Your Funeral Home Can Support Grieving Families',
+							date:  'November 12, 2020'
+						})
+
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-03-368x228',
+							tag:   'News',
+							title: 'Simple Mourning Rituals For The Modern Griever',
+							date:  'November 12, 2020'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-04-368x228',
+							tag:   'News',
+							title: '10 Inspirational Quotations About Grief and Comforting',
+							date:  'November 12, 2020'
+						})
+
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-05-368x228',
+							tag:   'News',
+							title: 'Funeral Etiquette: Everything You Need to Know',
+							date:  'November 12, 2020'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-06-368x228',
+							tag:   'News',
+							title: 'Grief Care Package Guide: 10 Useful Tips',
+							date:  'November 12, 2020'
+						})
+
+				+pagination([
+					{ prev: true, actionClass: 'disabled' },
+					{ value: '1', actionClass: 'active' },
+					{ value: '2' },
+					{ value: '3' },
+					{ next: true }
+				]).justify-content-center
+
+			.col-md-4.col-xl-3
+				include ../widget/_blog-sidebar-widgets

@@ -1,0 +1,14 @@
+//- Pricing
+mixin pricing( obj )
+	// Pricing
+	.pricing&attributes( attributes )
+		.pricing-head.context-dark
+			h3.pricing-title= obj.title
+			.pricing-price.h1
+				span.pricing-price-currency $
+				span.pricing-price-amount= obj.price
+		.pricing-body
+			ul.pricing-list
+				each item in obj.items
+					li.pricing-list-item( class= item.disabled ? 'pricing-list-item-disabled' : '' )= item.text
+			a.btn( href= '#' ) Order Now

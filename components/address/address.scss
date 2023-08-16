@@ -1,0 +1,48 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins";
+
+
+// Base
+.address {
+	padding: px-to-rem( 20px, 15px );
+	background-color: $gray-600;
+	border: 1px solid $gray-200;
+	border-radius: 3px;
+	color: $context-light;
+
+	table {
+		width: 100%;
+	}
+
+	td {
+		padding-bottom: px-to-rem( 9px );
+		vertical-align: baseline;
+	}
+
+	& + p {
+		margin-top: 30px;
+	}
+}
+
+.address-title {
+	width: 112px;
+	color: $primary;
+}
+
+
+// Spacing
+* + .address { margin-top: px-to-rem( 20px ) }
+
+
+// Media
+@include media-breakpoint-up( lg ) {
+	.address {
+		padding: px-to-rem( 29px, 24px, 21px );
+	}
+
+	* + .address { margin-top: px-to-rem( 38px ) }
+}

@@ -1,0 +1,40 @@
+include ../blurb/_blurb
+
+// Intro slider
+section.section.intro.intro-line.context-dark
+	+rd-navbar( data-rd-navbar= { responsive: { 1200: { autoHeight: false } } } )
+	// Swiper slider
+	.swiper-container.swiper-numbered( data-swiper )
+		// Additional required wrapper
+		.swiper-wrapper
+			// Slides
+			.swiper-slide( style='background-image: url( images/home-03-1920x930.jpg )' )
+								.intro-line-container
+									.container
+										.row.justify-content-center
+											.col-md-10.text-center
+												h2.h1.h1-big.text-decorated-2 Honoring life
+												h4.h4-small Welcome to Remony Funeral Home, a place where we honor your loved ones #[br.d-none.d-xl-block] by celebrating their wonderful lives.
+												a.btn.btn-primary( href='#' ) Get in Touch
+			.swiper-slide( style='background-image: url( images/home-01-1920x930.jpg )' )
+				.intro-line-container
+					.container
+						.row.justify-content-center
+							.col-md-10.text-center
+								h1.h1-big.text-decorated-2 Funeral arrangements
+								h4.h4-small Trust our team with the funeral arrangements as we will deliver you from #[br.d-none.d-xl-block] making overwhelming and stressful decisions.
+								a.btn.btn-primary( href='#' ) Get in Touch
+
+			.swiper-slide( style='background-image: url( images/home-02-1920x930.jpg )' )
+				.intro-line-container
+					.container
+						.row.justify-content-center
+							.col-md-10.text-center
+								h2.h1.h1-big.text-decorated-2 Coping with Grief
+								h4.h4-small The pain of loss can feel overwhelming, but we are here to help you cope with #[br.d-none.d-xl-block] your grief and heal.
+								a.btn.btn-primary( href='#' ) Get in Touch
+
+
+
+		// Pagination
+		.swiper-pagination

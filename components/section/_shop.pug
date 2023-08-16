@@ -1,0 +1,57 @@
+include ../product/_product
+include ../pagination/_pagination
+
+// Shop
+section.section.section-md.bg-transparent
+	.container
+		.row.row-40
+			.col-md-8.col-lg-9
+				.row.row-40.row-xl-55
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-01-270x359',
+							title: 'Dreams from the Heart',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-02-270x359',
+							title: 'Tulips Bouquet',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-03-270x359',
+							title: 'Thoughtful Lily Bouquet',
+							price: '35.00'
+						})
+
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-04-270x359',
+							title: '51 multicolored tulips\n',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-05-270x359',
+							title: 'Miracle\'s Light Vase',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'shop-06-270x359',
+							title: 'Burst of Light Bouquet',
+							price: '35.00'
+						})
+
+				+pagination([
+					{ prev: true, actionClass: 'disabled' },
+					{ value: '1', actionClass: 'active' },
+					{ value: '2' },
+					{ value: '3' },
+					{ next: true }
+				]).justify-content-center
+
+			.col-md-4.col-lg-3
+				include ../widget/_shop-sidebar-widgets

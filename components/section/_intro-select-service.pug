@@ -1,0 +1,26 @@
+include ../blurb/_blurb
+
+// Intro dotted
+section.intro.intro-dotted
+	+rd-navbar( data-rd-navbar= { responsive: { 1200: { autoHeight: false } } } )
+	.intro-dotted-inner.context-dark.bg-900( style='background-image: url( images/background/bg-10-1896x310.png )' )
+		.container
+			.row.row-30.align-items-end.justify-content-between
+				.col-md-6
+					p.text-decorated.text-decorated-2 Providing the best legal assistance & advice since 1999
+					h2.text-magnifier-2.text-capitalize Find great legal help without any stress
+				.col-md-6.col-xl-5
+					.form-group.select2-creative
+						.select-wrap
+							select.select2( id='input-sex', name='sex', data-select2-options!={ placeholder: 'Select a Service', dropdownCssClass: 'select-2-dark' }, data-constraints='@Required' )
+								option( label='placeholder' )
+								option Legal Advice
+								option Drafting Legal Documents
+								option Interest Protection
+						button.select2-creative-btn.btn.btn-outline Next
+
+	.intro-dotted-image-inner.bg-100
+		.container
+			.row.justify-content-center
+				.col-sm-10.col-xxl-12
+					+img( 'background/bg-8-1170x561' ).intro-dotted-image

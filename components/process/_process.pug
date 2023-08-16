@@ -1,0 +1,15 @@
+//- Counter simple
+mixin process( data )
+	// Counter
+	.process&attributes( attributes )
+		.process-value
+			span= data.value
+			span.process-icon.fl-bigmug-line-clipboard68
+		.process-title!= data.title
+
+mixin process-2( data )
+	// Counter
+	.process.process-2&attributes( attributes )
+		.process-value
+			div= data.value1
+			div= data.value2

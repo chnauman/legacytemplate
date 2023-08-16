@@ -1,0 +1,48 @@
+include ../thumbnail/_thumbnail
+
+// Practice
+section.section-md.pb-0
+	.container.container-wide
+		h2.text-center Practice
+		.owl-carousel.owl-carousel-bordered.owl-nav-lg.thumbnail-ordered-container( data-owl= { nav: true, margin: 0 }, data-autoplay='false', data-loop='false', data-items='1', data-sm-items='2', data-md-items='3', data-lg-items='4' )
+			+thumbnail-ordered({
+				img: 'image-3-423x324',
+				title: 'Admiralty Law',
+				text: 'Admiralty law is a body of laws, conventions, and treaties that govern...'
+			})
+			+thumbnail-ordered({
+				img: 'image-7-423x324',
+				title: 'Bankruptcy Law',
+				text: 'Bankruptcy is a legal procedure initiated by an individual or a business...'
+			})
+			+thumbnail-ordered({
+				img: 'image-4-423x324',
+				title: 'Business Law',
+				text: 'Business law refers to the laws that govern the dealings between people...'
+			})
+			+thumbnail-ordered({
+				img: 'image-9-423x324',
+				title: 'Civil Rights Law',
+				text: 'Civil rights law gives people in society the right to be free from certain...'
+			})
+
+			+thumbnail-ordered({
+				img: 'image-6-423x324',
+				title: 'Criminal Law',
+				text: 'Criminal law defines criminal offenses, regulates the apprehension...'
+			})
+			+thumbnail-ordered({
+				img: 'image-2-423x324',
+				title: 'Entertainment Law',
+				text: 'Entertainment law covers legal services provided to the entertainment...'
+			})
+			+thumbnail-ordered({
+				img: 'image-8-423x324',
+				title: 'Employment Law',
+				text: 'Employment law is the collection of laws that regulate relationships...'
+			})
+			+thumbnail-ordered({
+				img: 'image-5-423x324',
+				title: 'Family Law',
+				text: 'Family law is a legal practice area that focuses on issues involving...'
+			})

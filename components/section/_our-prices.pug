@@ -1,0 +1,41 @@
+include ../pricing/_pricing
+
+// Our team
+section.section.section-md.bg-overlay
+	.bg-overlay-item.bg-100
+	.container
+		h2.h1.text-center Our prices
+		.row.row-30.row-offset-lg
+			.col-lg-4.col-md-6
+				+pricing({
+					title: 'Basic',
+					price: '23',
+					items: [
+						{ text: 'Funeral Arrangements' },
+						{ text: 'Cremation Process' },
+						{ text: 'Dressing & Cosmetizing', disabled: true },
+						{ text: 'Service Vehicle', disabled: true }
+					]
+				})
+			.col-lg-4.col-md-6
+				+pricing({
+					title: 'Gold',
+					price: '55',
+					items: [
+						{ text: 'Funeral Arrangements' },
+						{ text: 'Cremation Process' },
+						{ text: 'Dressing & Cosmetizing' },
+						{ text: 'Service Vehicle', disabled: true }
+					]
+				}).pricing-active
+			.col-lg-4.col-md-6
+				+pricing({
+					title: 'Premium',
+					price: '105',
+					items: [
+						{ text: 'Funeral Arrangements' },
+						{ text: 'Cremation Process' },
+						{ text: 'Dressing & Cosmetizing' },
+						{ text: 'Service Vehicle' }
+					]
+				})

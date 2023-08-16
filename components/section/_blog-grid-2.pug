@@ -1,0 +1,53 @@
+include ../post/_post
+include ../pagination/_pagination
+
+// Blog grid
+section.section.section-md.bg-transparent
+	.container
+		.row.row-30.row-xl-60.row-xxl-100
+			.col-md-4
+				+post-shadow({
+					img:   'services-01-370x257',
+					title: 'Burials',
+					text:  'Our varied burial service offerings will ensure your peace of mind without undue financial hardship.'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'services-02-370x257',
+					title: 'Floral Arrangements',
+					text:  'Honor the life of a loved one by sending a beautiful funeral flower arrangement by a local florist partner near you.'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'services-03-370x257',
+					title: 'Memorial Services',
+					text:  'A dignified gathering of family, friends and colleagues to mark the life and passing of a loved one.'
+				})
+
+			.col-md-4
+				+post-shadow({
+					img:   'services-04-370x257',
+					title: 'Cremations',
+					text:  'Our cremation services vary in scale from low-key to more elaborate, according to the family\'s wishes.'
+				})
+
+			.col-md-4
+				+post-shadow({
+					img:   'services-05-370x257',
+					title: 'Ship-Outs',
+					text:  'Transferring a loved one to another state or country for burial is an important matter. We can help you with it.'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'services-06-370x257',
+					title: 'Funeral Planning',
+					text:  'Let us help you with the necessary steps when a loved one passes away, from the early considerations to the full event.'
+				})
+
+		+pagination([
+			{ prev: true, actionClass: 'disabled' },
+			{ value: '1', actionClass: 'active' },
+			{ value: '2' },
+			{ value: '3' },
+			{ next: true }
+		]).justify-content-center

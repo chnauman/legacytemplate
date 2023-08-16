@@ -1,0 +1,31 @@
+include ../person/_person
+
+// Our team
+section.section.section-md-extended.context-dark.bg-600
+	.container.container-wide
+		h2.h1.text-center Recent obituaries
+		.row.no-gutters.row-offset-lg.person-poster-container
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'home-05-458x538.jpg',
+					author: 'Harry Young',
+					description: 'October 7, 1927 - March 18, 2019'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'home-06-458x538.jpg',
+					author: 'Annette Black',
+					description: 'October 7, 1927 - March 18, 2019'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'home-07-458x538.jpg',
+					author: 'Emily Mitchell',
+					description: 'October 7, 1927 - March 18, 2019'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'home-08-458x538.jpg',
+					author: 'Johnny Sanchez',
+					description: 'October 7, 1927 - March 18, 2019'
+				})

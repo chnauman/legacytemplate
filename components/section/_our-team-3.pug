@@ -1,0 +1,31 @@
+include ../person/_person
+
+// Practice
+section.section.section-md.bg-100
+	.container
+		h2.text-center Meet Our Team
+		.row.row-40.row-offset-md
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'member-01-270x288',
+					author:   'Jose Reed',
+					position: 'Director'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'member-02-270x288',
+					author:   'Janice Phillips',
+					position: 'Mortuary Technician'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'member-03-270x288',
+					author:   'Paul Brown',
+					position: 'Funeral Assistant'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'member-04-270x288',
+					author:   'Donald Wood',
+					position: 'Embalmer'
+				})

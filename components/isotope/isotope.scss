@@ -1,0 +1,75 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Base
+.isotope-filters {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	max-width: 100%;
+	scrollbar-width: thin;
+	scrollbar-color: rgba( $dark, 1 ) rgba( $dark, .1 );
+	overflow-x: auto;
+	overflow-x: overlay;
+	overflow-y: hidden;
+	margin-left: -15px;
+	margin-right: 15px;
+
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgba( $dark, .5);
+	}
+
+	.mobile &,
+	&:hover {
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 3px;
+		}
+	}
+}
+
+.isotope-filter {
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: $transition-base;
+	color: $gray-500;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		transition: $transition-base;
+		height: 1px;
+		background-color: $gray-500;
+		width: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+
+	&.active {
+		color: $gray-900;
+
+		&::before {
+			background-color: $gray-900;
+			width: 100%;
+		}
+	}
+}

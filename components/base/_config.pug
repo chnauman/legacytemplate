@@ -1,0 +1,72 @@
+-
+	var
+		logo = {
+			default: 'logo-default-134x42.svg',
+			inverse: 'logo-inverse-134x42.svg',
+			name: 'Remony'
+		},
+		menu = {
+			type: 'root',
+			child: [
+				{ title: 'About'},
+				{
+					title: 'Services',
+					child: {
+						type: 'dropdown',
+						child: [{ title: 'Single Service' }]
+					}
+				},
+				{ title: 'Gallery' },
+				{ title: 'Obituaries'},
+				{
+					title: 'Pages',
+					link: '#',
+					child: {
+						type: 'dropdown',
+						child: [
+							{
+								title: 'Blog',
+								link: '#',
+								child: {
+									type: 'dropdown',
+									child: [
+										{ title: 'Classic blog' },
+										{ title: 'Grid blog' },
+										{ title: 'Blog post' }
+									]
+								}
+							},
+							{ title: '404' },
+							{ title: 'Typography' },
+							{ title: 'Coming soon' },
+							{ title: 'Icon boxes' },
+							{
+								title: 'Progress bars',
+								link: 'counters-&-progress-bars.html',
+							},
+							{ title: 'Search results' },
+							{ title: 'FAQ' }
+						]
+					}
+				},
+				{
+					title: 'Shop',
+					child: {
+						type: 'dropdown',
+						child: [
+							{ title: 'Single product' },
+							{ title: 'Checkout' },
+							{ title: 'Cart' }
+						]
+					}
+				},
+				{title: 'Contacts'}
+			]
+		},
+
+		homePage,
+		pageName,
+		pageId,
+		pageClass= null,
+		htmlClass= null,
+		breadcrumbs = [];

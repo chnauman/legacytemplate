@@ -1,0 +1,84 @@
+include ../post/_post
+
+// Blog carousel
+section.section.section-md.bg-transparent
+	.container
+		.row.row-5.align-items-center
+			.col-md-5
+				h2 Quality Services
+			.col-md-7
+				p.big We offer a wide range of funeral services and arrangements to help #[br.d-none.d-xl-block] you honor and celebrate the life of your loved one.
+		// Swiper slider
+		.swiper-carousel
+			.swiper-container( data-swiper!={
+				breakpoints: {
+					576:  {
+						slidesPerView: 2,
+						spaceBetween:  15
+					},
+					768:  {
+						slidesPerView: 3,
+						spaceBetween:  30
+					}
+				},
+				loop: false,
+				pagination: {
+					type: 'custom'
+				} } )
+				// Additional required wrapper
+				.swiper-wrapper
+					// Slides
+					.swiper-slide
+						+post-shadow({
+							img:   'services-01-370x257',
+							title: 'Burials',
+							text:  'Our varied burial service offerings will ensure your peace of mind without undue financial hardship.'
+						})
+					
+					.swiper-slide
+						+post-shadow({
+							img:   'services-02-370x257',
+							title: 'Floral arrangements',
+							text:  'Honor the life of a loved one by sending a beautiful funeral flower arrangement by a local florist partner near you.'
+						})
+					
+					.swiper-slide
+						+post-shadow({
+							img:   'services-03-370x257',
+							title: 'Memorial services',
+							text:  'A dignified gathering of family, friends and colleagues to mark the life and passing of a loved one.'
+						})
+					
+					.swiper-slide
+						+post-shadow({
+							img:   'services-04-370x257',
+							title: 'Cremations',
+							text:  'Our cremation services vary in scale from low-key to more elaborate, according to the family\'s wishes.'
+						})
+					
+					.swiper-slide
+						+post-shadow({
+							img:   'services-05-370x257',
+							title: 'Ship-outs',
+							text:  'Transferring a loved one to another state or country for burial is an important matter. We can help you with it.'
+						})
+					
+					.swiper-slide
+						+post-shadow({
+							img:   'services-06-370x257',
+							title: 'Funeral planning',
+							text:  'Let us help you with the necessary steps when a loved one passes away, from the early considerations to the full event.'
+						})
+				
+				.swiper-controls
+					// Pagination
+					.swiper-pagination
+
+					// Scrollbar
+					.swiper-progress
+						.swiper-progress-bar
+
+					// Navigation
+					.swiper-buttons
+						.swiper-button-prev.mdi-chevron-left
+						.swiper-button-next.mdi-chevron-right

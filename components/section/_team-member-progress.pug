@@ -1,0 +1,38 @@
+include ../quote/_quote
+include ../progress-linear/_progress-liear
+
+// Team member experience
+section.section-md.bg-transparent
+	.container
+		.row.row-30.justify-content-between
+			.col-md-6
+				h2 Honors & Achievements
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				p Ut enim ad minim veniam sed do eiusmod tempor. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod tempor.
+				ul.list.list-ordered.text-dark
+					li.list-item Super Lawyers’ Top 100 Lawyers in California
+					li.list-item Trial Lawyer Of The Year (2020)
+					li.list-item Top 10 US Attorneys
+					li.list-item 2020 US Judicial Award
+
+			.col-md-6
+				h2 Personal Skills
+				+progress-linear({
+					title: 'Business Law',
+					value: '88'
+				})
+
+				+progress-linear({
+					title: 'Personal Injury',
+					value: '70'
+				})
+
+				+progress-linear({
+					title: 'Employment Law',
+					value: '74'
+				})
+
+				+progress-linear({
+					title: 'Business Litigation',
+					value: '68'
+				})

@@ -1,0 +1,30 @@
+include ../process/_process
+
+// Counter icon
+section.section.section-md.bg-600.context-dark
+	.container
+		h2 How We Work
+		.row.row-30.row-offset-lg
+			.col-6.col-md-3
+				+process({
+					value: '01',
+					title: 'Planning a Funeral'
+				}).process-bordered
+
+			.col-6.col-md-3
+				+process({
+					value: '02',
+					title: 'Making Arrangements'
+				}).process-bordered
+
+			.col-6.col-md-3
+				+process({
+					value: '03',
+					title: 'Funeral Ceremony'
+				}).process-bordered
+
+			.col-6.col-md-3
+				+process({
+					value: '04',
+					title: 'Burial Service'
+				}).process-bordered
